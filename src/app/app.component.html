@@ -1,0 +1,40 @@
+<h1>
+  {{title}}
+</h1>
+
+<span i18n>To be translated</span>
+
+{{ appleCount }}
+<div i18n>
+  { appleCount, plural,
+    =0  { no apples at all }
+    one { one apple }
+    =17 { seven teen apples }
+    other { some apples ({{appleCount}}) }
+  }
+</div>
+
+
+<span i18n="some description|this is a bird">Crane</span>
+<span i18n="other description|this is a machine">Crane</span>
+
+<span i18n-title title="title tag">something</span>
+
+
+<p i18n>Hello <span class="some-class">Angular</span></p>
+
+
+
+<!-- i18n -->
+<div>Translate by comment</div>
+<!--/i18n-->
+
+<ng-container i18n>
+  <span>some text</span>
+  <span>more text</span>
+</ng-container>
+
+
+
+{{ cartTotal | currency }}
+{{ today | date:'shortDate' }}
